@@ -68,19 +68,19 @@ void setup() {
 
   // Making sure we're getting the right values and sending them to the display
   tmp1 = readIntFromEEPROM(EEP_ADDR1);
-  if ( !(tmp1<0)  && tmp1 != NAN) {  // some checks to make sur ewe're getting an acceptable value
+  if ( !(tmp1<0)  && tmp1 != NAN) {  // some checks to make sure we're getting an acceptable value
     myNex.writeNum("page1.n0.val", tmp1);
   }
   tmp2 = readIntFromEEPROM(EEP_ADDR2);
-  if ( !(tmp2<0)  && tmp2 != NAN) {  // some checks to make sur ewe're getting an acceptable value
+  if ( !(tmp2<0)  && tmp2 != NAN) {  // some checks to make sure we're getting an acceptable value
     myNex.writeNum("page1.n1.val", tmp2);
   }
   tmp3 = readIntFromEEPROM(EEP_ADDR3);
-  if ( !(tmp3<0)  && tmp3 != NAN) {  // some checks to make sur ewe're getting an acceptable value
+  if ( !(tmp3<0)  && tmp3 != NAN) {  // some checks to make sure we're getting an acceptable value
     myNex.writeNum("page2.n0.val", tmp3);
   }
   tmp4 = readIntFromEEPROM(EEP_ADDR4);
-  if ( !(tmp4<0)  && tmp4 != NAN) {  // some checks to make sur ewe're getting an acceptable value
+  if ( !(tmp4<0)  && tmp4 != NAN) {  // some checks to make sure we're getting an acceptable value
     myNex.writeNum("page2.n1.val", tmp4);
   }
   myNex.writeNum("page0.n1.val", getFreeSram());
@@ -100,7 +100,7 @@ void loop() {
 }
 
 
-//  ALL used functions declared bellow
+//  ALL used functions declared below
 // The *precise* temp control logic
 void doCoffee() {
   // Getting the latest LCD side set temp settings 
@@ -295,7 +295,7 @@ void trigger1() {
 }
 
 
-// Vibrtion sensor
+// Vibration sensor
 // bool vibrSense() {
 //   bool vibration_detect = false;
 //   unsigned long vibration = pulseIn(vibrPin, HIGH);
