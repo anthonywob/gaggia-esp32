@@ -1,6 +1,6 @@
 # gaggiuino
 
-## WIP - some documenting done see bellow ##
+## WIP - some documenting done see below ##
 
 ## Currently working on adding a dimmer and a sensor for detecting different mahcine states, ex: start/stop brewing ##
  >UPDATE: The code in it's current state is in full working order, the additional features i'm working on are mainly for additional behaviour like pre-infusion or descaling.
@@ -28,7 +28,7 @@ Software needed:
     >*USB driver so your system recognizes the Arduino clone board, let's say i have found this the hard way as apparetly the majority of cloned arduinos use a cheaper USB controller compared to "genuino"*
 
 Hardware requirements:
-1. [Arduino Nano](https://bit.ly/3eXSfXZ) - Be sure to buy the AT328 version, also if you're buying the mini usb version buy the cable from them, you'll save yourself a lot of problems.
+1. [ESP32] (http://)
 2. [Nextion touch screen](https://bit.ly/33dO8RV)
 3. [MAX6675 thermocouple](https://bit.ly/3ejTUIj)
 4. [C-M4 screw K-Type thermocouple sensor](https://bit.ly/3nP1WMm)
