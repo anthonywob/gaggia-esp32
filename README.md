@@ -1,11 +1,14 @@
-# gaggiuino
+# gaggia-esp32 *Building off of the Gaggiuno Project - Using this as a start point*
 
 ## WIP - some documenting done see below ##
 
-## Currently working on adding a dimmer and a sensor for detecting different mahcine states, ex: start/stop brewing ##
- >UPDATE: The code in it's current state is in full working order, the additional features i'm working on are mainly for additional behaviour like pre-infusion or descaling.
+## Modifying code to run on esp32 as well as adding additional features
+Plans to add:
+>Pressure transducer - Guage on HMI
+>Steam control (not sure what level of implementation here)
+>Temperature graphing
  
-### Better documenting coming soon, just delayed a bit by some job/life things i need to sort out now ###
+### CODE IS NOT IN WORKING ORDER - STILL GATHERING PARTS AND NOW STARTED CODING ###
 
 Gaggiuino started as an idea to improve an already cappable coffee machine while keeping the machine looks and buttons functionality as close as possible to the original, an important part is that no internal cables/connectors were modified, all the connections were made by creating splitters using the purchased spade connectors.
 
