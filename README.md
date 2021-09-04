@@ -1,4 +1,4 @@
-# gaggia-esp32 *Building off of the Gaggiuno Project - Using this as a start point*
+# Gaggia-esp32 *Building off of the Gaggiuno Project - Using this as a start point*
 
 ## WIP - some documenting done see below ##
 
@@ -19,9 +19,7 @@ I will assume you have  the necessary components and installed the related softw
 << PROJECT REQUIREMENTS >>
 
 Software needed:
-1. [Arduino IDE](https://www.arduino.cc/en/software)
-    >*Needed to upload the code ".ino" to the arduino ROM*
-    >
+1. Visual Studio Code w/ Platform IO [Visual Studio Code] (https://code.visualstudio.com) OR [Arduino IDE](https://www.arduino.cc/en/software)
     >*Included libraries and [how to add them](https://www.arduino.cc/en/Guide/Libraries?setlang=en):*
     >- EasyNextionLibrary
     >- Max6675
