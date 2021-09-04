@@ -4,10 +4,10 @@
 
 ## Modifying code to run on esp32 as well as adding additional features
 Plans to add:
->-Pressure transducer - Guage on HMI
->-Steam control (not sure what level of implementation here)
->-Temperature graphing
->-Considering loadcell implementation for "Flow" (Concept not actively exploring as I'm guessing a high sensitivity loadcell is required) {Though considering a USB cal for implementation}
+>- Pressure transducer - Guage on HMI
+>- Steam control (not sure what level of implementation here)
+>- Temperature graphing
+>- Considering loadcell implementation for "Flow" (Concept not actively exploring as I'm guessing a high sensitivity loadcell is required) {Though considering a USB cal for implementation}
  
 ### CODE IS NOT IN WORKING ORDER - STILL GATHERING PARTS AND NOW STARTED CODING ###
 
