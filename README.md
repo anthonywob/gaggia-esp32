@@ -7,10 +7,10 @@ Plans to add:
 >Pressure transducer - Guage on HMI
 >Steam control (not sure what level of implementation here)
 >Temperature graphing
+>Considering loadcell implementation for "Flow" (Concept not actively exploring as I'm guessing a high sensitivity loadcell is required) {Though considering a USB cal for implementation}
  
 ### CODE IS NOT IN WORKING ORDER - STILL GATHERING PARTS AND NOW STARTED CODING ###
 
-Gaggiuino started as an idea to improve an already cappable coffee machine while keeping the machine looks and buttons functionality as close as possible to the original, an important part is that no internal cables/connectors were modified, all the connections were made by creating splitters using the purchased spade connectors.
 
 >*First and foremost please do not underestimate the danger of electricity or overestimate your ability to work around it, only start working on your machine while it's  completely disconnected from the mains power socket, also by agreeing to follow the bellow guide i cannot be deemed responsible for any of the damage you induce to your house appliances, yourself, your cat, friend or gold fish and it will be entirely your fault!*
 
@@ -19,14 +19,14 @@ I will assume you have  the necessary components and installed the related softw
 << PROJECT REQUIREMENTS >>
 
 Software needed:
-1. Visual Studio Code w/ Platform IO [Visual Studio Code] (https://code.visualstudio.com) OR [Arduino IDE](https://www.arduino.cc/en/software)
+1. Visual Studio Code w/ Platform IO [Visual Studio Code](https://code.visualstudio.com) OR [Arduino IDE](https://www.arduino.cc/en/software)
     >*Included libraries and [how to add them](https://www.arduino.cc/en/Guide/Libraries?setlang=en):*
     >- EasyNextionLibrary
     >- Max6675
+    >- WifiManager
+    >- ArduinoOTA
 2. [Nextion Editor](https://nextion.tech/nextion-editor/)
     >*Necessary to load the ".HMI" file and export it to a FAT32 fromatted microSD card*
-3. [CH340 USB Driver](https://electropeak.com/learn/how-to-install-ch340-driver/)
-    >*USB driver so your system recognizes the Arduino clone board, let's say i have found this the hard way as apparetly the majority of cloned arduinos use a cheaper USB controller compared to "genuino"*
 
 Hardware requirements:
 1. [ESP32] (http://)
@@ -46,7 +46,6 @@ Optional:
 - [Nextion LCD case](https://bit.ly/3b2nxf7)
 - [Magnet sheet](https://bit.ly/3xKTMJn)
 
-Aditionally here is a link to the files for a [3D printed case](https://www.thingiverse.com/thing:3611737), not my design just found it on thingiverse so all credits go to the original creator.
 
 First you need to understand what goes where, the schematics isn't really rocket science but for someone who's never disasembled or has no experience working with electrical circuits it might get very confusing real fast so i will try to describe it as simple as possible, sometimes adding some photos as well.
 First you need to check your setup works as expected outside the machine so you don't ahve it all installed and realise just afterwards it's not reading any temperature because of a faulty thermocouple or any other element, or your relay doesn't go between the ON/OFF modes.
